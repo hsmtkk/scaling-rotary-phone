@@ -5,6 +5,7 @@ name: default
 
 steps:
   - name: yamllint
+    image: sdesbure/yamllint:latest
     commands:
       - yamllint .drone.yml
   - name: hadolint
